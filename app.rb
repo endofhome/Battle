@@ -35,16 +35,24 @@ class Battle < Sinatra::Base
     erb(:attack)
   end
 
-  get '/heal' do
+  post '/heal' do
     @game = $game
     @game.heal($game.current_turn)
+    redirect'/heal'
+  end
+
+  get '/heal' do
     @message = $game.attack_message
     erb(:attack)
   end
 
-  get '/sleep' do
+  post '/sleep' do
     @game = $game
     @game.sleep($game.opposite_player)
+    redirect'/sleep'
+  end
+
+  get '/sleep' do
     @message = $game.attack_message
     erb(:attack)
   end
