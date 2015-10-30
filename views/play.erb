@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Playerscreen</title>
+  <link href='/css/application.css' rel='stylesheet' type='text'>
+</head>
+<body>
+<header><%= @game.player_1.name %> vs. <%= @game.player_2.name %>
+</header>
+<h2><%=@game.player_1.name%>: <%=@game.player_1.hp%>HP</h2>
+<progress id="HP" value=<%=@game.player_1.hp%> max=<%=@game.player_1.class::DEFAULT_HP%>></progress>
+<h2><%=@game.player_2.name%>: <%=@game.player_2.hp%>HP</h2>
+<progress id="HP" value=<%=@game.player_2.hp%> max=<%=@game.player_2.class::DEFAULT_HP%>></progress>
+<form action='/attack'>
+  <input type='submit' value='Attack' name='Attack'>
+</form>
+<form action='/heal'>
+  <input type='submit' value='Heal' name='Heal'>
+</form>
+<form action='/sleep'>
+  <input type='submit' value='Sleep' name='Sleep'>
+</form>
+
+</body>
+</html>
