@@ -11,7 +11,7 @@
 <progress id="HP" value=<%=@game.player_1.hp%> max=<%=@game.player_1.class::DEFAULT_HP%>></progress>
 <h2><%=@game.player_2.name%>: <%=@game.player_2.hp%>HP</h2>
 <progress id="HP" value=<%=@game.player_2.hp%> max=<%=@game.player_2.class::DEFAULT_HP%>></progress>
-<form action='/attack'>
+<form action='/attack' method='post'>
   <input type='submit' value='Attack' name='Attack'>
 </form>
 <form action='/heal'>
