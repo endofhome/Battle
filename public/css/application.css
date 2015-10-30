@@ -12,3 +12,71 @@ header {
   text-align: center;
 }
 
+.myAttackButton {
+ box-shadow: 0px 0px 0px 0px #3dc21b;
+ background-color:#FF0000;
+ border-radius:28px;
+ border:1px solid #000000;
+ display:inline-block;
+ cursor:pointer;
+ color:#ffffff;
+ font-family:Arial;
+ font-size:17px;
+ padding:24px 58px;
+ text-decoration:none;
+ text-shadow:0px 1px 0px #2f6627;
+}
+.myAttackButton:hover {
+ background-color:#B30000;
+}
+.myAttackButton:active {
+ position:relative;
+ top:1px;
+}
+
+.myHealButton {
+ box-shadow: 0px 0px 0px 0px #3dc21b;
+ background-color:#44c767;
+ border-radius:28px;
+ border:1px solid #000000;
+ display:inline-block;
+ cursor:pointer;
+ color:#ffffff;
+ font-family:Arial;
+ font-size:17px;
+ padding:24px 58px;
+ text-decoration:none;
+ text-shadow:0px 1px 0px #2f6627;
+}
+.myHealButton:hover {
+ background-color:#5cbf2a;
+}
+.myHealButton:active {
+ position:relative;
+ top:1px;
+}
+
+.mySleepButton {
+ box-shadow: 0px 0px 0px 0px #3dc21b;
+ background-color:#FFDB4D;
+ border-radius:28px;
+ border:1px solid #000000;
+ display:inline-block;
+ cursor:pointer;
+ color:#ffffff;
+ font-family:Arial;
+ font-size:17px;
+ padding:24px 58px;
+ text-decoration:none;
+ text-shadow:0px 1px 0px #2f6627;
+}
+.mySleepButton:hover {
+ background-color:#FFCC00;
+}
+.mySleepButton:active {
+ position:relative;
+ top:1px;
+}
+
+
+

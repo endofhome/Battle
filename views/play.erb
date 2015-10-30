@@ -11,14 +11,18 @@
 <progress id="HP" value=<%=@game.player_1.hp%> max=<%=@game.player_1.class::DEFAULT_HP%>></progress>
 <h2><%=@game.player_2.name%>: <%=@game.player_2.hp%>HP</h2>
 <progress id="HP" value=<%=@game.player_2.hp%> max=<%=@game.player_2.class::DEFAULT_HP%>></progress>
+<br>
+<br>
 <form action='/attack' method='post'>
-  <input type='submit' value='Attack' name='Attack'>
+  <input type='submit' class= 'myAttackButton' value='Attack' name='Attack'>
 </form>
+<br>
 <form action='/heal' method='post'>
-  <input type='submit' value='Heal' name='Heal'>
+  <input type='submit' class= 'myHealButton' value='Heal' name='Heal'>
 </form>
+<br>
 <form action='/sleep' method='post'>
-  <input type='submit' value='Sleep' name='Sleep'>
+  <input type='submit' class= 'mySleepButton' value='Sleep' name='Sleep'>
 </form>
 
 </body>
